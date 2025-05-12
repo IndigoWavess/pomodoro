@@ -1,0 +1,92 @@
+/* Jasne kolory */
+.bg-pastel-cream { background-color: #F2E1AE !important; }
+.bg-pastel-light-lilac { background-color: #B4A3D9 !important; }
+.bg-pastel-lilac { background-color: #9475BF !important; }
+.bg-pastel-blue { background-color: #657EBE !important; }
+.bg-pastel-dark { background-color: #341C8C !important; }
+
+/* Ciemne kolory */
+.dark .bg-dark-brown { background-color: #654936 !important; }
+.dark .bg-dark-rose { background-color: #8F5682 !important; }
+.dark .bg-dark-orange { background-color: #D07E47 !important; }
+.dark .bg-dark-indigo { background-color: #282C63 !important; }
+.dark .bg-pure-black { background-color: #000000 !important; }
+
+
+body {
+    color: #2E0F47 !important;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6, p, span, label, input, textarea, button {
+    color: #2E0F47 !important;
+  }
+  
+  
+  input, textarea, button {
+    color: #2E0F47 !important;
+  }
+  
+  
+  .dark body {
+    color: #D1C4E9 !important; /
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark span, .dark label, .dark input, .dark textarea, .dark button {
+    color: #D1C4E9 !important;
+  }
+  
+/* Animacje */
+.transition-bg {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.button-hover {
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.textarea-hover {
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.textarea-hover:hover,
+.textarea-hover:focus {
+  border-color: #9475BF;
+  box-shadow: 0 0 10px rgba(148, 117, 191, 0.5);
+}
+
+.theme-toggle-anim {
+  transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+.theme-toggle-anim:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* Glow */
+.timer-glow {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #B4A3D9, 0 0 20px #9475BF, 0 0 30px #341C8C;
+  }
+  to {
+    text-shadow: 0 0 20px #B4A3D9, 0 0 40px #9475BF, 0 0 60px #341C8C;
+  }
+}
+
+
+body {
+  background-color: #F2E1AE !important; /* kremowe w trybie jasnym */
+}
+
+.dark body {
+  background-color: #000000 !important; /* czarne w trybie ciemnym */
+}
